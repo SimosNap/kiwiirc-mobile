@@ -101,10 +101,9 @@
 <script>
 'kiwi public';
 
-import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
-import { isIOS, isAndroid, GestureTypes } from '@nativescript/core';
+import { isIOS, isAndroid, GestureTypes, ObservableArray } from '@nativescript/core';
 import { Menu } from 'nativescript-menu';
-import { Toasty } from 'nativescript-toasty';
+import { Toasty } from '@triniwiz/nativescript-toasty';
 
 import * as bufferTools from '@/libs/bufferTools';
 import parseMessage from '@/libs/MessageParser';
