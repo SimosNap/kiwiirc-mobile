@@ -16,7 +16,7 @@ import {
 } from '@nativescript/core';
 import { FileSystemAccess } from '@nativescript/core/file-system/file-system-access';
 import { alert } from '@nativescript/core/ui/dialogs';
-import * as appversion from 'nativescript-appversion';
+import * as appversion from '@nativescript/appversion';
 import * as Sound from "nativescript-sound-kak";
 import Themes from 'nativescript-themes';
 import InAppBrowser from 'nativescript-inappbrowser';
@@ -100,7 +100,7 @@ export async function updateConfig(needsStartupOptions = true) {
     // for more information on the config update flow, see docs/server_config_flow.md
     const updatedConfig = await getUpdatedConfig(needsStartupOptions);
 
-    console.log('updatedConfig.startupScreen: ' + updatedConfig.startupScreen);
+    console.log('updatedConfig.startupScreen : ' + updatedConfig.startupScreen);
 
     if (needsStartupOptions && !updatedConfig.startupOptions) {
         log('StartupOptions not available after config update');
